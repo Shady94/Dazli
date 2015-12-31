@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="10.8"
+    android:background="#FFFFFF">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.8"
+        android:background="@drawable/barratitulo"
+        android:orientation="horizontal"
+         >
+        </LinearLayout>
+        
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#373737"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+        
+        
+        <LinearLayout 
+            
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+        	<ImageView android:layout_width="wrap_content"
+        	    android:id="@+id/btn_home"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:layout_margin="5dp"
+        	android:src="@drawable/home"/>
+            
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	<ImageView
+        android:id="@+id/boton_categorias"
+     android:layout_weight="1"
+     android:layout_width="0dip"
+     android:layout_height="wrap_content"
+     android:layout_margin="5dp"
+     android:src="@drawable/btn_cat" />
+	    
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	
+		    <ImageView
+        android:id="@+id/boton_share"
+       android:layout_weight="1"
+       android:layout_width="0dip"
+       android:layout_height="wrap_content"
+        android:src="@drawable/share" />
+        
+	    
+	</LinearLayout>
+	
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+         >
+        
+               
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+             >
+            
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#50000000"
+            
+            >
+            <LinearLayout 
+                android:orientation="vertical"
+                android:id="@+id/btnArriba"
+                android:background="@drawable/imgvestido"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:gravity="bottom"
+                android:layout_marginRight="1px"
+                
+                >
+
+                <TextView
+                    android:id="@+id/textv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Dresses" 
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#99000000"
+                    
+                    />
+                
+            </LinearLayout>
+
+              
+              <LinearLayout      
+                  android:orientation="vertical"
+                   android:id="@+id/btnAbajo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/falda"
+                android:gravity="bottom"
+                
+ 				>
+                  
+                  <TextView
+                    android:id="@+id/textv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Skirts" 
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#99000000"
+                    
+                    />
+              </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="#50000000">
+            	
+            	<LinearLayout 
+            	    android:orientation="vertical"
+                android:id="@+id/btnAccesorios"
+                android:background="@drawable/lentes"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:gravity="bottom"
+                android:layout_marginRight="1px"
+                 >
+            	    <TextView
+                    android:id="@+id/textv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Accesories" 
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#99000000"
+                    
+                    />
+            	    
+            	</LinearLayout>
+
+               <LinearLayout 
+                   android:orientation="vertical"
+                   android:id="@+id/btnZapatos"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/zapatos"
+               
+                android:gravity="bottom"
+                >
+                   <TextView
+                       android:id="@+id/textv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Shoes" 
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:background="#99000000"
+                   />
+                   
+               </LinearLayout>
+        
+               </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+        </LinearLayout>
+        
+           
+                
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+
+</LinearLayout>

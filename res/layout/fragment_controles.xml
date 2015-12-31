@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal" 
+    android:weightSum="100">
+    
+    
+	
+    <LinearLayout 
+        android:layout_weight="75"
+        android:layout_height="0dip"
+        android:layout_width="match_parent"
+        
+        >
+        
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_weight="25"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:orientation="horizontal"
+	    android:weightSum="6"
+	    android:background="@drawable/degradado"
+	    >
+	    <LinearLayout 
+	    android:layout_weight="1.5"
+	    android:layout_height="match_parent"
+	    android:layout_width="0dip"
+	    android:gravity="center"
+	    >
+	        <ImageView
+        android:id="@+id/boton_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btninfo"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp" />
+	        
+	        
+	    </LinearLayout>
+	<LinearLayout 
+	    android:layout_weight="3"
+	    android:layout_height="match_parent"
+	    android:layout_width="0dip"
+	    android:weightSum="2"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    >
+	    		 <ImageView
+        android:id="@+id/boton_like"
+        android:src="@drawable/btnlike"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp" />
+	    		 
+	    		 <ImageView
+        android:id="@+id/boton_dislike"
+       android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:src="@drawable/btndislike" />
+	    		 
+	    
+	    		
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_weight="1.5"
+	    android:layout_height="match_parent"
+	    android:layout_width="0dip"
+	    android:gravity="center"
+	    >
+	    <ImageView
+        android:id="@+id/boton_ubic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btnloc"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp" />
+	</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

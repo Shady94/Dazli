@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Dazli</string>
+    <string name="action_settings">Dazli</string>
+    <string name="app_id">250628488394501</string>  
+    <string name="display">Displaying %1$s of %2$s</string>
+    <string name="selected"> selected</string>
+    <string name="login_facebook">Login - Facebook</string>
+    <string name="google_id">UA-57832079-2</string>  
+
+</resources>

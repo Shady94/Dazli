@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="108"
+    tools:context=".Principal"
+    android:gravity="center_horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8"
+        android:background="@drawable/barratitulo"
+        android:orientation="horizontal"
+         >
+        </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:background="#373737"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+        
+        <LinearLayout 
+            
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+        	<ImageView android:layout_width="wrap_content"
+        	    android:id="@+id/home"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:layout_margin="5dp"
+        	android:src="@drawable/home"/>
+            
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	<ImageView
+        android:id="@+id/boton_categorias"
+     android:layout_weight="1"
+     android:layout_width="0dip"
+     android:layout_height="wrap_content"
+     android:layout_margin="5dp"
+     android:src="@drawable/btn_cat" />
+	    
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	 <ImageView
+        android:id="@+id/boton_closeth"
+       android:layout_weight="1"
+       android:layout_width="0dip"
+       android:layout_height="wrap_content"
+        android:src="@drawable/btn_clos" />
+        
+	    
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	
+		    <ImageView
+        android:id="@+id/boton_share"
+       android:layout_weight="1"
+       android:layout_width="0dip"
+       android:layout_height="wrap_content"
+        android:src="@drawable/share" />
+        
+	    
+	</LinearLayout>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/layFondo"
+        android:layout_weight="90"
+        android:layout_height="0dip"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        
+        
+        >
+
+        <ListView
+            android:id="@+id/lst_Imagen"
+            android:layout_width="2000dp"
+            android:layout_height="fill_parent"
+            android:keepScreenOn="true"
+            tools:listitem="@layout/imagen_visualizador_esp" 
+            >
+
+    </ListView>
+    </LinearLayout>
+    
+    
+    
+	
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal" >
+    
+    <ImageView
+        android:id="@+id/barra_neg"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/barra_negra" />
+    
+    <ImageView
+        android:id="@+id/boton_closeth"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/barra_neg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/closeth" />
+    
+    <ImageView
+        android:id="@+id/boton_categorias"
+        android:layout_width="26dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/barra_neg"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn_categorias" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="20dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/home" />
+
+    <ListView
+        android:id="@+id/lista_categorias"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/barra_neg"
+        tools:listitem="@layout/filas_categorias" >
+
+    </ListView>
+
+</RelativeLayout>

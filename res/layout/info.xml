@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal" 
+    android:weightSum="108">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8"
+        android:background="@drawable/barratitulo"
+        android:orientation="horizontal"
+         >
+        </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:background="#373737"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+        
+        <LinearLayout 
+            
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+        	<ImageView android:layout_width="wrap_content"
+        	    android:id="@+id/btn_home"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:layout_margin="5dp"
+        	android:src="@drawable/home"/>
+            
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	<ImageView
+        android:id="@+id/boton_categorias"
+     android:layout_weight="1"
+     android:layout_width="0dip"
+     android:layout_height="wrap_content"
+     android:layout_margin="5dp"
+     android:src="@drawable/btn_cat" />
+	    
+	</LinearLayout>
+		<LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+                	
+		    <ImageView
+        android:id="@+id/boton_share"
+       android:layout_weight="1"
+       android:layout_width="0dip"
+       android:layout_height="wrap_content"
+        android:src="@drawable/share" />
+        
+	    
+	</LinearLayout>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_weight="65"
+        android:layout_height="0dip"
+        android:layout_width="match_parent"
+        >
+        <ImageView
+        android:id="@+id/img_Prenda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/desconectado" />
+
+    </LinearLayout>
+    
+	<LinearLayout 
+	    android:layout_weight="25"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:orientation="horizontal"
+	    
+	    >
+
+		<LinearLayout
+		    android:layout_width="0dip"
+		    android:layout_height="match_parent"
+		    android:layout_weight="4.5"
+		    android:orientation="vertical"
+		    android:weightSum="3" >
+		    
+		   
+		    
+		    <ScrollView 
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="2"
+		        >
+		        
+		        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:paddingTop="15dp"
+		    android:weightSum="2" >
+		     
+		    
+		    
+		     <TextView
+		        android:id="@+id/txtPrenda"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:text="Prenda"
+		        android:textStyle="bold|italic"
+		        android:gravity="center" />
+
+		    <TextView
+		        android:id="@+id/txtPrecio"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:text="Precio"
+		        android:textStyle="bold|italic" 
+		        android:gravity="center"/>
+
+		    <TextView
+		        android:id="@+id/txtTalla"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:text="Talla"
+		        android:textStyle="bold|italic" 
+		        android:gravity="center"/>
+
+		    <TextView
+		        android:id="@+id/txtDescuento"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:text="Descuento"
+		        android:textStyle="bold|italic"
+		        android:gravity="center"
+		        android:visibility="invisible"
+		        android:textColor="#FF0000" />
+		    <ImageView 
+		        android:layout_height="80dp"
+		        android:layout_width="200dp"
+		        android:src="@drawable/btncomf"
+		        android:id="@+id/btnDescuento"
+		        android:layout_gravity="center_horizontal"/>
+		    
+		    
+		    <TextView
+		        android:id="@+id/txtDescripcion"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15dp"
+		        android:text="No hay una descripcion disponible para esta prenda por el momento"
+		        android:textStyle="italic"
+		        android:gravity="left"
+		        android:layout_marginTop="10dp"
+		        android:layout_gravity="center_horizontal" />
+		    
+		            
+		        </LinearLayout>
+
+		   </ScrollView>
+     
+		</LinearLayout>
+		
+    <LinearLayout 
+	    android:layout_weight="1.5"
+	    android:layout_width="0dip"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    >
+	    <ImageView
+        android:id="@+id/img_Ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btnloc" />
+        
+	
+	</LinearLayout>
+	
+	
+	</LinearLayout>
+	
+	
+    
+    
+    </LinearLayout>
+
+
+
